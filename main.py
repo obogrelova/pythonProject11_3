@@ -23,7 +23,7 @@ def init_db():
     conn = sqlite3.connect('school_data.db')
     cur = conn.cursor()
     cur.execute('''
-    CREATE TABLE IF NOT EXISTS users (
+    CREATE TABLE IF NOT EXISTS students (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
     age INTEGER NOT NULL,
